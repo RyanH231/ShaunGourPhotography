@@ -36,7 +36,7 @@ a
     font-size:.8rem;
     color:#ffba08;
 
-    margin:0 2% 0 1%;
+    margin:4% 2% 0 1%;
 }
 
 .profileSection
@@ -73,6 +73,9 @@ a
        justify-content: center;
        align-self: center;
        padding:2% 3% 0 3%;
+
+       width:750px;
+       max-width: 100%;
 }
 
 .quote
@@ -167,6 +170,12 @@ li:active
     {
         gap:2rem;
         font-size: 1rem;
+    }
+
+    .testimonial
+    {
+        max-width: 100%;
+        margin-right: 2%;
     }
     .quote
     {
