@@ -80,9 +80,17 @@ a
     font-size: 1.3rem;
     padding-top:1%;
     text-align: center;
-    color:#f1faee;
+    color:#ffba08;
+    font-style: italic;
 }
 
+.name
+{
+    font-size: 1.3rem;
+    padding-top:1%;
+    text-align: center;
+    color:#ffba08;
+}
 .testimonialImage
 {
     border-radius: 100%;
