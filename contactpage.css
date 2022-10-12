@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+html
+{
+    min-height: 100%;
+}
+
+body
+{
+    background-image: url("redvelvet1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.head
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "Pacifico";
+    color:#ffba08;
+    padding-top: 2%;
+}
+
+h1
+{
+    font-size: 2rem;
+}
+
+.profileSection
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 1%;
+}
+
+/* Nav-Bar styling */
+ul
+{
+    padding:0;
+    margin:0;
+    list-style: none;
+    padding-top: 2%;
+    display:flex;
+    align-items:flex-end;
+    justify-content:flex-start;
+    padding-bottom: 3%;
+    gap:10rem;
+
+    font-size: 1.5rem;
+    color:#e85d04;
+}
+.selected
+{
+    color:#ffba08;
+}
+
+a
+{
+    color:inherit;
+    text-decoration: none;
+}
+
+li:hover:not(.selected)
+{
+    color:#ffba08;
+}
+
+li:active:not(.selected)
+{
+    color:#e85d04;
+}
+
+.inactive
+{
+    visibility: hidden;
+}
+/* --------------------------- */
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 75%;
+    height: auto;
+
+    font-family:'Courier New', Courier, monospace;
+    color:#e85d04;
+    font-size: 1rem;
+}
+
+.text
+{
+    align-self: center;
+    text-align: center;
+}
+.image
+{
+    align-self: center;
+    border-radius: 10%;
+}
+
+.contentTitle
+{
+    text-align: center;
+    padding-top: 2%;
+    color:#ffba08;
+}
+.contactInfo
+{
+    padding-top: 5%;
+    max-width: 100%;
+    color:#e85d04;
+}
+
+.foot
+{
+    margin-top:3%;
+    margin-left:10%;
+    display:flex;
+    flex-direction: row;
+    gap:1rem;
+
+    color:#e85d04;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 75%;
+    align-self: center;
+}
+
+.footerText
+{
+    font-size:1rem;
+}
+
+a:hover
+{
+    color:#ffba08;
+}
+/* ---------------------- */
+
+/* Screen sizes up to 600px in width */
+@media(max-width:600px)
+{
+    h1
+    {
+        font-size: 1rem;
+    }
+    svg
+    {
+        width:24px;
+        height:24px;
+    }
+    .subtitle
+    {
+        font-size: 1rem;
+    }
+
+    ul
+    {
+        gap:2rem;
+        font-size: 1rem;
+    }
+    .footerText
+    {
+        font-size: .6rem;
+    }
+    a
+    {
+        font-size: .6rem;
+    }
+}
+
+/* Screen sizes up to 300px in width */
+@media(max-width:300px)
+{
+    h1
+    {
+        font-size: .4rem;
+    }
+    svg
+    {
+        width:22px;
+        height:22px;
+    }
+    ul
+    {
+        gap:1rem;
+        font-size: .8rem;
+    }
+    .footerText
+    {
+        font-size: .5rem;
+    }    
+    a
+    {
+        font-size: .5rem;
+    }
+}

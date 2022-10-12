@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import Bootstrap CSS and custom CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="weddingpage.css">
+    <title>Shaun Gour Photography</title>
+</head>
+<body>
+    <div class="container">
+        <header class="head">
+            <a href="index.html"> <h1>Shaun Gour Photography</h1> </a>
+            
+            <svg onclick="OpenNav()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#ffba08" class="bi bi-list icon" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </header>
+
+        <section class="profileSection">
+            <nav id="navbar" class="navbar">
+                <ul class="navItem">
+                    <a href="about.html"><li >About</li></a>
+                    <a href="photography.html"><li>Photography</li></a>
+                    <div class="subList">
+                       <a href="landscape.html"> <li onmouseover="ChangeToLandscape()" class="subCategory">Landscape</li> </a>
+                       <a href="portrait.html"> <li onmouseover="ChangeToPortrait()"class="subCategory">Portrait</li> </a> 
+                        <a href="wedding.html"> <li onmouseover="ChangeToWedding()" class="subCategory selected">Wedding</li> </a>
+                    </div>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+            </nav>
+        </section>
+
+        <div class="photos">         
+            <div id="carouselFeatured" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">             
+                <!-- Image loading for carousel -->
+                 <div class="carousel-inner text-center">
+                    <div class="carousel-item active">
+                        <img src="CoupleOne.jpg" alt="CoupleOne" class="carouselImage" id="image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="CoupleTwo.jpg" alt="CoupleTwo" class="carouselImage" id="image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="CoupleThree.jpg" alt="CoupleThree" class="carouselImage" id="image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="CoupleFour.jpg" alt="CoupleFour" class="carouselImage" id="image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="CoupleFive.jpg" alt="CoupleFive" class="carouselImage" id="image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="CoupleSix.jpg" alt="CoupleSix" class="carouselImage" id="image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="CoupleSeven.jpg" alt="CoupleSeven" class="carouselImage" id="image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="CoupleEight.jpg" alt="CoupleEight" class="carouselImage" id="image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="CoupleNine.jpg" alt="CoupleNine" class="carouselImage" id="image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="CoupleTen.jpg" alt="CoupleTen" class="carouselImage" id="image">
+                    </div>
+                    <!-- Creating the buttons for accessing the carousel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFeatured" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" style="color:black;"  aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselFeatured" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" style="color:black;" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div> 
+            </div> 
+        </div>
+    </div>
+
+    <!-- Import Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" 
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
